@@ -3,7 +3,22 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  authorize_uri: 'http://127.0.0.1:9000/oauth2/authorize?',
+  client_id:'reserva-com',
+  redirect_uri:'http://127.0.0.1:4200/authorized',
+  scope:'openid profile',
+  response_type:'code',
+  response_mode:'form_post',
+  code_challenge_method:'S256',
+  // code_challenge:'vEH-FoAkWzg0OUM7O_XXAcWPPfdMTiYzu9tOwRGE9LE',
+  // code_verifier:'e7XppJEBTfMSu5i7xUIzKY8rysnghiLw8kIOViZFwdD',
+  token_url:'http://127.0.0.1:9000/oauth2/token',
+  grant_type:'authorization_code',
+  resource_url:'http://localhost:8080/resource/',
+  logout_url:'http://127.0.0.1:9000/logout',
+  secret_pkce:'secret',
+  base_url:'http://localhost:8080/'
 };
 
 /*

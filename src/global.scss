@@ -24,3 +24,21 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+
+.container-max{
+    max-width: 100vw;
+}
+
+.wrapper{
+    width: 460px!important;
+    padding-inline: 3rem;
+    padding-block: 3rem;
+    margin-inline:  auto;
+}
+

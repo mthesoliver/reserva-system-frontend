@@ -9,6 +9,10 @@
         "@ionic/angular-toolkit:page": {
           "styleext": "scss",
           "standalone": true
+        },
+        "@schematics/angular:component": {
+          "style": "scss",
+          "skipTests": true
         }
       },
       "root": "",
@@ -126,7 +130,10 @@
     }
   },
   "cli": {
-    "schematicCollections": ["@ionic/angular-toolkit"]
+    "schematicCollections": [
+      "@ionic/angular-toolkit"
+    ],
+    "analytics": false
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
